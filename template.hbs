@@ -19,12 +19,17 @@
             background-color: #14121D;
             border-radius: 8px;
             overflow: hidden;
+            padding: 20px;
         }
         .email-header {
             background-color: #C5FF20;
             color: #ffffff;
             padding: 20px;
             text-align: center;
+        }
+        .email-header img {
+            max-width: 150px; /* Adjust size as needed */
+            height: auto;
         }
         .email-body {
             padding: 20px;
@@ -37,7 +42,12 @@
             text-align: center;
             font-size: 12px;
         }
+        .button-container {
+            text-align: center;
+            margin: 20px 0;
+        }
         .button {
+            display: inline-block;
             background-color: #C5FF20;
             color: #ffffff;
             padding: 10px 20px;
@@ -45,19 +55,31 @@
             border-radius: 5px;
         }
         .button:hover {
-            background-color: #C5FF20;
+            background-color: #B0E61C;
+        }
+        @media screen and (max-width: 600px) {
+            .email-container {
+                padding: 10px;
+            }
+            .email-body, .email-footer {
+                padding: 15px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="email-container">
         <div class="email-header">
+            <img src="your-logo-path-here.png" alt="Company Logo"> <!-- Add logo path here -->
             <h1>Welcome back, {{firstName}}!</h1>
         </div>
         <div class="email-body">
             <p>We noticed a sign-in to your account at {{signInTime}} from {{device}}.</p>
             <p>If this was you, there's no need for further action.</p>
-            <p>If you did not sign in, please secure your account immediately by <a href="{{securityLink}}" class="button">changing your password</a>.</p>
+            <p>If you did not sign in, please secure your account immediately.</p>
+            <div class="button-container">
+                <a href="{{securityLink}}" class="button">Click here to change your password</a>
+            </div>
             <p>If you have any questions, feel free to reach out to our support team at <a href="mailto:support@ikiwellness.com">support@ikiwellness.com</a>.</p>
         </div>
         <div class="email-footer">
