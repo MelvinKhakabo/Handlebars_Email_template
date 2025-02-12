@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-In Notification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #201E28;
+            background-color: #14121D;
+            margin: 0;
+            padding: 0;
+        }
+        .email-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #14121D;
+            border-radius: 8px;
+            overflow: hidden;
+            padding: 20px;
+        }
+        .email-header {
+            background-color: #C5FF20;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        .email-header img {
+            max-width: 150px; /* Adjust size as needed */
+            height: auto;
+        }
+        .email-body {
+            padding: 20px;
+            text-align: left;
+        }
+        .email-footer {
+            background-color: #14121D;
+            color: #888;
+            padding: 15px;
+            text-align: center;
+            font-size: 12px;
+        }
+        .button-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .button {
+            display: inline-block;
+            background-color: #C5FF20;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #B0E61C;
+        }
+        @media screen and (max-width: 600px) {
+            .email-container {
+                padding: 10px;
+            }
+            .email-body, .email-footer {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="email-header">
+            <img src="your-logo-path-here.png" alt="Company Logo"> <!-- Add logo path here -->
+            <h1>Welcome back, John!</h1>
+        </div>
+        <div class="email-body">
+            <p>We noticed a sign-in to your account at February 11, 2025 10:00 AM from iPhone 13.</p>
+            <p>If this was you, there's no need for further action.</p>
+            <p>If you did not sign in, please secure your account immediately.</p>
+            <div class="button-container">
+                <a href="https://example.com/change-password" class="button">Click here to change your password</a>
+            </div>
+            <p>If you have any questions, feel free to reach out to our support team at <a href="mailto:support@ikiwellness.com">support@ikiwellness.com</a>.</p>
+        </div>
+        <div class="email-footer">
+            <p>&copy; 2025 Ikiwellness. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
