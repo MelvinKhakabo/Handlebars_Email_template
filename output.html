@@ -7,8 +7,8 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            color: #C5FF20;
-            background-color: #14121D;
+            color: #FFFFFF; /* White text for better contrast */
+            background-color: #14121D; /* Iki Dark Blue */
             margin: 0;
             padding: 0;
         }
@@ -22,22 +22,23 @@
             padding: 20px;
         }
         .email-header {
-            background-color: #C5FF20;
-            color: #14121D;
-            padding: 20px;
+            background-color: #C5FF20; /* Light Green */
+            color: #201E28; /* Iki Grey for better readability */
+            padding: 10px; /* Reduced padding */
             text-align: center;
         }
         .email-header img {
-            max-width: 150px; /* Adjust size as needed */
+            max-width: 100px; /* Reduced logo size */
             height: auto;
         }
         .email-body {
             padding: 20px;
             text-align: left;
+            color: #FFFFFF; /* White text on dark background */
         }
         .email-footer {
-            background-color: #C5FF20;
-            color: #14121D;
+            background-color: #C5FF20; /* Light Green */
+            color: #201E28; /* Iki Grey */
             padding: 15px;
             text-align: center;
             font-size: 12px;
@@ -49,13 +50,13 @@
         .button {
             display: inline-block;
             background-color: #C5FF20;
-            color:  #14121D;
+            color: #14121D;
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
         }
         .button:hover {
-            background-color: #C5FF20;
+            background-color: #EAD69F; /* Iki Brown for hover effect */
         }
         @media screen and (max-width: 600px) {
             .email-container {
@@ -63,6 +64,14 @@
             }
             .email-body, .email-footer {
                 padding: 15px;
+            }
+            .email-header img {
+                max-width: 80px; /* Further reduce logo size for smaller screens */
+            }
+            .button {
+                width: 100%; /* Full-width button on mobile */
+                display: block;
+                text-align: center;
             }
         }
     </style>
@@ -88,3 +97,5 @@
     </div>
 </body>
 </html>
+
+   
